@@ -1,0 +1,96 @@
+{
+  "totalPatients": 1247,
+  "newToday": 23,
+  "pendingAssignment": 8,
+  "recentRegistrations": [
+    {
+      "name": "John Smith",
+      "id": "PT-2025-001",
+      "department": "Emergency",
+      "time": "2 mins ago",
+      "phone": "(555) 123-4567",
+      "dateOfBirth": "1985-03-15",
+      "gender": "Male",
+      "emergencyContact": "John Johnson - (555) 987-6543",
+      "admissionDate": "January 15, 2025",
+      "attendingPhysician": "Dr. Michael Chen",
+      "status": "Active"
+    },
+    {
+      "name": "Maria Garcia",
+      "id": "PT-2025-002",
+      "department": "Cardiology",
+      "time": "15 mins ago",
+      "phone": "(555) 234-5678",
+      "dateOfBirth": "1972-08-22",
+      "gender": "Female",
+      "emergencyContact": "Carlos Garcia - (555) 876-5432",
+      "admissionDate": "January 14, 2025",
+      "attendingPhysician": "Dr. Sarah Wilson",
+      "status": "Active"
+    },
+    {
+      "name": "David Wilson",
+      "id": "PT-2025-003",
+      "department": "Orthopedics",
+      "time": "32 mins ago",
+      "phone": "(555) 345-6789",
+      "dateOfBirth": "1990-12-05",
+      "gender": "Male",
+      "emergencyContact": "Lisa Wilson - (555) 765-4321",
+      "admissionDate": "January 13, 2025",
+      "attendingPhysician": "Dr. Robert Brown",
+      "status": "Active"
+    }
+  ],
+  "allPatients": [
+    {
+      "name": "John Smith",
+      "id": "PT-2025-001",
+      "department": "Emergency",
+      "phone": "(555) 123-4567",
+      "dateOfBirth": "1985-03-15",
+      "gender": "Male",
+      "emergencyContact": "John Johnson - (555) 987-6543",
+      "admissionDate": "January 15, 2025",
+      "attendingPhysician": "Dr. Michael Chen",
+      "status": "Active"
+    },
+    {
+      "name": "Maria Garcia",
+      "id": "PT-2025-002",
+      "department": "Cardiology",
+      "phone": "(555) 234-5678",
+      "dateOfBirth": "1972-08-22",
+      "gender": "Female",
+      "emergencyContact": "Carlos Garcia - (555) 876-5432",
+      "admissionDate": "January 14, 2025",
+      "attendingPhysician": "Dr. Sarah Wilson",
+      "status": "Active"
+    },
+    {
+      "name": "David Wilson",
+      "id": "PT-2025-003",
+      "department": "Orthopedics",
+      "phone": "(555) 345-6789",
+      "dateOfBirth": "1990-12-05",
+      "gender": "Male",
+      "emergencyContact": "Lisa Wilson - (555) 765-4321",
+      "admissionDate": "January 13, 2025",
+      "attendingPhysician": "Dr. Robert Brown",
+      "status": "Active"
+    },
+    {
+      "name": "Sarah Johnson",
+      "id": "PT-2025-004",
+      "department": "ICU",
+      "phone": "(555) 456-7890",
+      "dateOfBirth": "1978-06-30",
+      "gender": "Female",
+      "emergencyContact": "Mike Johnson - (555) 654-3210",
+      "admissionDate": "January 12, 2025",
+      "attendingPhysician": "Dr. Emily Davis",
+      "status": "Critical"
+    }
+  ]
+}

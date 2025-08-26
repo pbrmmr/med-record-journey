@@ -1,0 +1,71 @@
+{
+  "availableRooms": [
+    {
+      "number": "101",
+      "department": "Emergency Department",
+      "floor": "1st Floor",
+      "capacity": 1,
+      "equipment": ["Cardiac Monitor", "Oxygen Supply"]
+    },
+    {
+      "number": "205",
+      "department": "General Ward",
+      "floor": "2nd Floor",
+      "capacity": 2,
+      "equipment": ["Basic Monitoring", "Adjustable Bed"]
+    },
+    {
+      "number": "301",
+      "department": "ICU",
+      "floor": "3rd Floor",
+      "capacity": 1,
+      "equipment": ["Ventilator", "Advanced Monitoring", "Defibrillator"]
+    }
+  ],
+  "occupiedRooms": [
+    {
+      "number": "102",
+      "patient": "John Smith",
+      "patientId": "PT-2025-001",
+      "department": "Emergency Department",
+      "admittedDate": "Jan 15, 2025",
+      "floor": "1st Floor"
+    },
+    {
+      "number": "206",
+      "patient": "Maria Garcia",
+      "patientId": "PT-2025-002",
+      "department": "General Ward",
+      "admittedDate": "Jan 14, 2025",
+      "floor": "2nd Floor"
+    },
+    {
+      "number": "302",
+      "patient": "Robert Johnson",
+      "patientId": "PT-2025-005",
+      "department": "ICU",
+      "admittedDate": "Jan 13, 2025",
+      "floor": "3rd Floor"
+    }
+  ],
+  "recentAssignments": [
+    {
+      "patient": "Sarah Wilson",
+      "patientId": "PT-2025-006",
+      "room": "103",
+      "department": "Emergency Department",
+      "time": "2 hours ago",
+      "assignedBy": "Dr. Michael Chen"
+    },
+    {
+      "patient": "Michael Brown",
+      "patientId": "PT-2025-007",
+      "room": "301",
+      "department": "ICU",
+      "time": "4 hours ago",
+      "assignedBy": "Dr. Emily Davis"
+    }
+  ],
+  "totalAvailable": 12,
+  "totalOccupied": 8
+}

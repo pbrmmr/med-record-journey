@@ -1,33 +1,15 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, UserPlus, Clock } from "lucide-react";
+import patientsData from "@/data/patients.json";
 
 const statsData = [
-  { label: "Total Patients", value: "1,247", icon: Users },
-  { label: "New Today", value: "23", icon: UserPlus },
-  { label: "Pending Assignment", value: "8", icon: Clock },
+  { label: "Total Patients", value: patientsData.totalPatients.toLocaleString(), icon: Users },
+  { label: "New Today", value: patientsData.newToday.toString(), icon: UserPlus },
+  { label: "Pending Assignment", value: patientsData.pendingAssignment.toString(), icon: Clock },
 ];
 
-const recentRegistrations = [
-  {
-    name: "John Smith",
-    id: "PT-2025-001",
-    department: "Emergency",
-    time: "2 mins ago",
-  },
-  {
-    name: "Maria Garcia",
-    id: "PT-2025-002", 
-    department: "Cardiology",
-    time: "15 mins ago",
-  },
-  {
-    name: "David Wilson",
-    id: "PT-2025-003",
-    department: "Orthopedics", 
-    time: "32 mins ago",
-  },
-];
+const recentRegistrations = patientsData.recentRegistrations;
 
 const Dashboard = () => {
   return (

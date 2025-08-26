@@ -3,48 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Search, Plus, ArrowRight, Bed, Users } from "lucide-react";
+import roomsData from "@/data/rooms.json";
 
-const availableRooms = [
-  { number: "101", department: "Emergency Department" },
-  { number: "205", department: "General Ward" },
-  { number: "301", department: "ICU" },
-];
-
-const occupiedRooms = [
-  {
-    room: "102",
-    patient: "John Smith",
-    department: "Emergency Department",
-    admitted: "Jan 15, 2025",
-  },
-  {
-    room: "206",
-    patient: "Maria Garcia", 
-    department: "General Ward",
-    admitted: "Jan 14, 2025",
-  },
-  {
-    room: "302",
-    patient: "Robert Johnson",
-    department: "ICU",
-    admitted: "Jan 13, 2025",
-  },
-];
-
-const recentAssignments = [
-  {
-    patient: "Sarah Wilson",
-    room: "103",
-    department: "Emergency Department",
-    time: "2 hours ago",
-  },
-  {
-    patient: "Michael Brown",
-    room: "301", 
-    department: "ICU",
-    time: "4 hours ago",
-  },
-];
+const availableRooms = roomsData.availableRooms;
+const occupiedRooms = roomsData.occupiedRooms;
+const recentAssignments = roomsData.recentAssignments;
 
 const RoomAssignment = () => {
   return (
@@ -86,7 +49,7 @@ const RoomAssignment = () => {
         <Card className="p-6">
           <div className="flex items-center gap-2 mb-4">
             <Bed className="h-5 w-5 text-muted-foreground" />
-            <h3 className="text-lg font-semibold text-foreground">Available Rooms (12)</h3>
+            <h3 className="text-lg font-semibold text-foreground">Available Rooms ({roomsData.totalAvailable})</h3>
           </div>
           <div className="space-y-3">
             {availableRooms.map((room, index) => (
@@ -106,7 +69,7 @@ const RoomAssignment = () => {
         <Card className="p-6">
           <div className="flex items-center gap-2 mb-4">
             <Users className="h-5 w-5 text-muted-foreground" />
-            <h3 className="text-lg font-semibold text-foreground">Occupied Rooms (8)</h3>
+            <h3 className="text-lg font-semibold text-foreground">Occupied Rooms ({roomsData.totalOccupied})</h3>
           </div>
           <div className="space-y-3">
             {occupiedRooms.map((room, index) => (
@@ -119,8 +82,8 @@ const RoomAssignment = () => {
                       </span>
                     </div>
                     <div>
-                      <p className="font-medium text-foreground">{room.patient} - Room {room.room}</p>
-                      <p className="text-sm text-muted-foreground">{room.department} • Admitted: {room.admitted}</p>
+                      <p className="font-medium text-foreground">{room.patient} - Room {room.number}</p>
+                      <p className="text-sm text-muted-foreground">{room.department} • Admitted: {room.admittedDate}</p>
                     </div>
                   </div>
                   <Button size="sm" variant="outline">

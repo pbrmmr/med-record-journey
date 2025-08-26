@@ -1,0 +1,44 @@
+{
+  "departments": [
+    {
+      "id": "emergency",
+      "name": "Emergency Department",
+      "code": "ED",
+      "totalRooms": 8,
+      "availableRooms": 3,
+      "occupiedRooms": 5
+    },
+    {
+      "id": "cardiology",
+      "name": "Cardiology",
+      "code": "CARD",
+      "totalRooms": 6,
+      "availableRooms": 2,
+      "occupiedRooms": 4
+    },
+    {
+      "id": "orthopedics",
+      "name": "Orthopedics",
+      "code": "ORTHO",
+      "totalRooms": 5,
+      "availableRooms": 3,
+      "occupiedRooms": 2
+    },
+    {
+      "id": "icu",
+      "name": "ICU",
+      "code": "ICU",
+      "totalRooms": 4,
+      "availableRooms": 1,
+      "occupiedRooms": 3
+    },
+    {
+      "id": "general-ward",
+      "name": "General Ward",
+      "code": "GW",
+      "totalRooms": 12,
+      "availableRooms": 8,
+      "occupiedRooms": 4
+    }
+  ]
+}
